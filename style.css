@@ -15,11 +15,10 @@ nav {
 
 ul {
     display: flex;
-    overflow: hidden;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
 }
 
 nav li a{
@@ -37,22 +36,6 @@ nav li a{
 
 nav li a:hover{
     background-color: gray;
-}
-
-.dropdown-menu {
-    position: absolute;
-    box-shadow: 0 0 2px black;
-    display: none;
-}
-
-.dropdown-menu a {
-    display: block;
-    color: black;
-    background-color: white;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
 }
 
 /* FORMATAÇÃO LAYOUT */
@@ -192,21 +175,21 @@ p {
 
 
 @media screen and (max-width: 600px) {
+   
     nav {
         position: static;
     }
-   
-    nav li {
+    
+    ul {
         display: block;
         text-align: center;
     }
-
-    .dropdown-menu {
-        position: relative;
-    }
-
-    ul {
-        display: block;
+    
+    main {
+        width: 80%;
+        padding: 15px;
+        margin: auto;
+        left: 10%;
     }
 
     input[type=text], select, textarea {
@@ -242,6 +225,10 @@ p {
         font-size: 15px;
     }
 }
+
+
+
+
 
 
 
