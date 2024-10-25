@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSW-LANDING PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favico/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="">Curriculo</a>
+
+                <div class="dropdown-menu">
+                    <a href="./docs/curriculo-arq.pdf" target="_blank" rel="externo">Arquitetura</a>
+                    <a href="./docs/curriculo-cp.pdf" target="_blank" rel="externo">Computação</a>
+                </div>
+            </li>
+            <li>
+                <a href="https://github.com/Terres201" target="_blank" rel="externo">GitHub</a>
+            </li>
+            <li>
+                <a href="servicos.html">Serviços</a>
+            </li>
+            <li>
+                <a class="active" href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </nav>          
+        
+<br>
+
+    <main>
+        <h1>FORMULÁRIO PARA CONTATO</h1>
+        <hr>
+        <form class="formulario" action="mailto:bielgeraldini@yahoo.com.br" method="post">
+            <div class="field">
+                <label for="nome-completo">Nome Completo:</label>
+                <input type="text" name="nome-completo" id="nome-completo" placeholder="Digite seu nome completo">
+            </div>
+            <div class="field">
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
+            </div>
+            <div class="field">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="field">
+                <label for="">Selecione se é uma pessoa física ou jurídica:</label>
+                <input type="radio" name="opcao" value="pessoa-fisica"> Pessoa Física
+                <input type="radio" name="opcao" value="pessoa-juridica"> Pessoa Jurídica
+            </div>
+            <div class="field">
+                <label for="">Melhor horário para contato a partir das:</label>
+                <input type="time" name="time" id="time">
+            </div>
+            <div class="field">
+                <label for="">Tipo de serviço desejado:</label>
+                <select name="serviços" size="1">
+                    <option value="">Selecione</option>
+                    <option value="pw1">Página Web Estática (1-3 pag)</option>
+                    <option value="pw2">Página Web Estática (4-5 pag)</option>
+                    <option value="pw3">Página Web Estática (6+ pag)</option>
+                    <option value="pd">Página Web Dinâmica</option>
+                    <option value="pa">Página Web Estática Avançada</option>
+                    <option value="di1">Design Interiores (1 Cômodo)</option>
+                    <option value="di2">Design Interiores (2 Cômodos)</option>
+                    <option value="di3">Design Interiores (3+ Cômodos)</option>
+                    <option value="pra">Projeto Arquitetonico</option>
+                    <option value="ma">Marcenaria</option>
+                </select>
+        
+            </div>
+        
+            <div class="field">
+                <label for="">Descreva o serviço desejado:</label>
+                <textarea name="descricao" id="descricao" placeholder="Descreva brevemente do que deseja contratar" style="height: 200px;"></textarea>
+            </div>
+            <div class="field">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Limpar">
+            </div>
+    </main>
+
+    
+</body>
+</html>
